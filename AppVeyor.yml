@@ -18,7 +18,7 @@ before_build:
 - cmd: nuget restore
 - cmd: dotnet tool install -g dotnet-sonarscanner
 - cmd: dotnet sonarscanner begin /o:"gaudy98" /k:"Gaudy98_ZbW.Testing.WpfSample2" /v:%APPVEYOR_BUILD_VERSION% /d:sonar.branch.name=%APPVEYOR_REPO_BRANCH%
-	/d:sonar.host.url="https://sonarcloud.io" /d:sonar.login="a43182f1b3484fb52782cd59fa2cab924d38f4fa" /d:sonar.language="cs«
+	/d:sonar.host.url="https://sonarcloud.io" /d:sonar.login="b7fb5db4d1f9114c12d86afff29c8adc516dbb1c" /d:sonar.language="cs«
 	/d:sonar.exclusions="**/bin/**/*,**/obj/**/*" /d:sonar.cs.opencover.reportsPaths="CoverageResults\coverage.opencover.xml"
 build_script:
 - cmd: dotnet build ZbW.Testing.WpfSample.sln
